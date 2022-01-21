@@ -3,4 +3,4 @@
 - For most part: i will be using [Portswigger](https://portswigger.net) and other resources while learning.
 
 ## Topics
-1. [Access Controls](./Access-Controls/Access-Control.md)
+1. [Access Controls](./Access%20Controls/Access%20Control.md)
