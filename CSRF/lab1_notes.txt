@@ -1,0 +1,20 @@
+Lab #1 -  CSRF With no defenses
+
+vulnerable parameter - email change functionality
+
+Goal - exploit the CSRF and change the email address
+
+creds: weiner:peter
+
+Analysis:
+- relevant action: email change
+- cookie based session authentication
+- no unpredictable request parameter(only email-predictable)
+
+POC
+- lab1.html or:
+- engagement tool -> generate csrf form
+- option -> autosubmit; Regenerate
+- host poc, send webpage link containing the poc to victim
+
+- if user logged in, exploit works. if not doesn't work

@@ -1,0 +1,23 @@
+Lab #4: CSRF where token is not tied to user session
+
+vulnerable parameter - email change functionality
+
+creds: weiner:peter
+
+Analysis:
+- relevant action: email change
+- cookie, csrf based authentication
+- csrf not tied to user session
+
+POC
+- lab4.html or
+- login as user one
+- capture change-email request and copy csrf token
+- drop request
+- login as user 2
+- capture change-email request and replace csrf token with one we copied
+- engagement tool -> generate csrf form
+- option -> autosubmit; Regenerate
+- host poc, send webpage link containing the poc to victim
+- email changes as our csrf token is still valid and thus dont need to know victim's csrf token
+- if user logged in, exploit works. if not doesn't work

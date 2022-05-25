@@ -1,0 +1,15 @@
+Lab 5: CSRF where token is tied to non-session cookie
+
+vulnerable parameter - email change functionality
+
+creds: weiner:peter
+        carlos:montoya
+
+Analysis:
+- relevant action: email change
+- cookie, csrf based authentication
+- csrf token tied to a non session cookie
+
+POC
+- lab5.html or
+- login as user one

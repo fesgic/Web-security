@@ -1,0 +1,18 @@
+Lab 6: CSRF where token is duplicated in cookie
+
+vulnerable parameter - email change functionality
+
+creds: weiner:peter
+
+Analysis:
+- relevant action: email change
+- cookie, csrf based authenticatiom
+- csrf cookie duplicated in csrf token
+
+POC
+- lab6.html or
+-- engagement tool -> generate csrf form
+- option -> autosubmit; Regenerate
+- host poc, send webpage link containing the poc to victim
+
+- if user logged in, exploit works. if not doesn't work

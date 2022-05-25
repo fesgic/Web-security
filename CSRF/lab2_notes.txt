@@ -1,0 +1,21 @@
+Lab #2 CSRF where token validation depends on request method
+
+vulnerable parameter - email change functionality
+
+csrf token with POST method not vulnerable
+
+creds: weiner:peter
+
+Analysis:
+- relevant action: email change
+- cookie based session authentication
+- authentication only works with POST method
+
+POC
+- lab2.html or:
+- engagement tool -> generate csrf form
+- option -> autosubmit; Regenerate
+- change method to GET
+- host poc, send webpage link containing the poc to victim
+
+- if user logged in, exploit works. if not doesn't work
